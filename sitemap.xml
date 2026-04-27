@@ -12,7 +12,7 @@
   <!-- Primary Service Pages -->
   <url>
     <loc>https://totalpaysolutions.com/cash-discount-program</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -48,7 +48,7 @@
   </url>
   <url>
     <loc>https://totalpaysolutions.com/nrs</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -265,6 +265,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://totalpaysolutions.com/locations/annandale-merchant-services</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://totalpaysolutions.com/locations/roanoke-merchant-services</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -315,10 +321,3 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://totalpaysolutions.com/blog/clover-vs-nrs-pos-comparison</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-</urlset>

@@ -12,6 +12,12 @@
 /zero-transaction-fee-processing/1000     /cash-discount-program  301
 /zero-transaction-fee-processing/*        /cash-discount-program  301
 
+# ── 404 FIXES — URLs Google found but don't exist ───────────
+/traditional-processing/  /credit-card-processing  301
+/traditional-processing   /credit-card-processing  301
+/clover/                  /clover-pos-systems      301
+/clover                   /clover-pos-systems      301
+
 # ── TRAILING SLASH CANONICALIZATION ─────────────────────────
 # Force canonical no-trailing-slash URLs (belt & suspenders)
 /contact/     /contact  301
@@ -19,6 +25,7 @@
 /faq/         /faq      301
 /blog/        /blog     301
 /get-a-quote/ /get-a-quote  301
+/nrs/         /nrs      301
 
 # ── .HTML EXTENSION REMOVAL (301 → CLEAN URL) ─────────────
 # Prevents duplicate content — Google crawls both /page.html and /page
@@ -72,10 +79,4 @@
 /locations/virginia-beach-merchant-services.html  /locations/virginia-beach-merchant-services  301
 /locations/virginia-merchant-services.html  /locations/virginia-merchant-services  301
 /locations/wilmington-merchant-services.html  /locations/wilmington-merchant-services  301
-/locations/winston-salem-merchant-services.html  /locations/winston-salem-merchant-services  301
-/locations/index.html  /locations  301
-
-# Blog pages
-/blog/clover-vs-nrs-pos-comparison.html  /blog/clover-vs-nrs-pos-comparison  301
-/blog/credit-card-processing-fees-explained.html  /blog/credit-card-processing-fees-explained  301
-/blog/what-is-a-cash-discount-program.html  /blog/what-is-a-cash-discount-program  301
+/locations/winston-salem-merchant-services.html  /locations/winston-salem-mer
