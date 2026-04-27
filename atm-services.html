@@ -177,10 +177,10 @@ if ('requestIdleCallback' in window) {
 <main>
 <div class="page-feature-img">
 <picture>
-  <source media="(max-width: 768px)" srcset="/Media/service-atm-services-sm.webp" type="image/webp">
-      <source srcset="/Media/service-atm-services.webp" type="image/webp">
-  <img alt="Person using an ATM machine" height="420" src="/Media/service-atm-services.jpg" width="1400" fetchpriority="high" loading="eager"/>
-</picture>
+    <source media="(min-width: 769px)" srcset="/Media/service-atm-services.webp" type="image/webp">
+    <source media="(max-width: 768px)" srcset="/Media/service-atm-services-sm.webp" type="image/webp">
+    <img alt="Person using an ATM machine" height="420" src="/Media/service-atm-services.jpg" width="1400" fetchpriority="high" loading="eager"/>
+  </picture>
 </div>
 <!-- Breadcrumb -->
 <nav style="background: rgba(13,27,42,0.5); padding: 12px 24px; border-bottom: 1px solid rgba(255,255,255,0.08);">

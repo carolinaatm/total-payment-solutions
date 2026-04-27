@@ -53,14 +53,6 @@ nav a{color:var(--text-muted);font-weight:500;font-size:.93rem;transition:color 
   ['mousedown','keydown','touchstart','scroll'].forEach(function(e){
     document.addEventListener(e, loadRecaptcha, {once:true, passive:true});
   });
-  if ('IntersectionObserver' in window) {
-    var obs = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if (entry.isIntersecting) { loadRecaptcha(); obs.disconnect(); }
-      });
-    }, {rootMargin: '200px'});
-    document.querySelectorAll('[id^="recaptcha"]').forEach(function(el){ obs.observe(el); });
-  }
 })();
 </script>
 <style>

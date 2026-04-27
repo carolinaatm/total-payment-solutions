@@ -226,10 +226,10 @@ if ('requestIdleCallback' in window) {
 <main>
 <div class="page-feature-img">
 <picture>
-  <source media="(max-width: 768px)" srcset="/Media/industry-restaurants-sm.webp" type="image/webp">
-      <source srcset="/Media/industry-restaurants.webp" type="image/webp">
-  <img alt="Dark moody restaurant interior with tables and chairs" height="420" src="/Media/industry-restaurants.jpg" width="1400" fetchpriority="high" loading="eager"/>
-</picture>
+    <source media="(min-width: 769px)" srcset="/Media/industry-restaurants.webp" type="image/webp">
+    <source media="(max-width: 768px)" srcset="/Media/industry-restaurants-sm.webp" type="image/webp">
+    <img alt="Dark moody restaurant interior with tables and chairs" height="420" src="/Media/industry-restaurants.jpg" width="1400" fetchpriority="high" loading="eager"/>
+  </picture>
 </div>
 <nav class="breadcrumb">
 <a href="/">Home</a> › <a href="/industries">Industries</a> › <span>Restaurants &amp; Bars</span>
