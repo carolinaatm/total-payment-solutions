@@ -1,0 +1,22 @@
+# Netlify Headers — Total Payment Solutions
+
+# Cache static assets aggressively (images, fonts, CSS, JS)
+/Media/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.js
+  Cache-Control: public, max-age=2592000
+
+/*.css
+  Cache-Control: public, max-age=2592000
+
+# HTML pages — cache briefly, revalidate often (SEO-friendly)
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Sitemap and robots — short cache
+/sitemap.xml
+  Cache-Control: public, max-age=86400
+
+/robots.txt
+  Cache-Control: public, max-age=86400

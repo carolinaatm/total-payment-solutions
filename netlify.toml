@@ -1,0 +1,14 @@
+# Netlify Configuration — Total Payment Solutions
+
+[build]
+  publish = "."
+
+# Disable Netlify's built-in Pretty URLs — we handle redirects explicitly
+# This prevents Netlify from serving /page.html at /page automatically
+# and lets our _redirects file control all URL canonicalization
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

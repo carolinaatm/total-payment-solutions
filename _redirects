@@ -1,0 +1,81 @@
+# Netlify Redirects — Total Payment Solutions
+# Format: /old-path  /new-path  status-code
+
+# ── OLD WORDPRESS URLS ─────────────────────────────────────
+# WordPress author/feed URLs crawled by Google from old site
+/author/*        /blog  301
+/feed            /blog  301
+/feed/*          /blog  301
+
+# ── BROKEN URL FIX ──────────────────────────────────────────
+# Double-slash URL indexed by Google from old site
+/zero-transaction-fee-processing/1000     /cash-discount-program  301
+/zero-transaction-fee-processing/*        /cash-discount-program  301
+
+# ── TRAILING SLASH CANONICALIZATION ─────────────────────────
+# Force canonical no-trailing-slash URLs (belt & suspenders)
+/contact/     /contact  301
+/about/       /about    301
+/faq/         /faq      301
+/blog/        /blog     301
+/get-a-quote/ /get-a-quote  301
+
+# ── .HTML EXTENSION REMOVAL (301 → CLEAN URL) ─────────────
+# Prevents duplicate content — Google crawls both /page.html and /page
+# Root pages
+/about.html  /about  301
+/atm-services.html  /atm-services  301
+/blog.html  /blog  301
+/cash-discount-program.html  /cash-discount-program  301
+/clover-pos-systems.html  /clover-pos-systems  301
+/contact.html  /contact  301
+/credit-card-processing.html  /credit-card-processing  301
+/ecommerce-payments.html  /ecommerce-payments  301
+/faq.html  /faq  301
+/get-a-quote.html  /get-a-quote  301
+/high-risk-merchant-accounts.html  /high-risk-merchant-accounts  301
+/mobile-payment-processing.html  /mobile-payment-processing  301
+/nrs.html  /nrs  301
+/thank-you.html  /thank-you  301
+
+# Industry pages
+/industries/carnivals-fairs-events.html  /industries/carnivals-fairs-events  301
+/industries/concessionaires.html  /industries/concessionaires  301
+/industries/contractors.html  /industries/contractors  301
+/industries/convenience-stores.html  /industries/convenience-stores  301
+/industries/gas-stations.html  /industries/gas-stations  301
+/industries/healthcare.html  /industries/healthcare  301
+/industries/restaurants.html  /industries/restaurants  301
+/industries/retail.html  /industries/retail  301
+/industries/salons-spas.html  /industries/salons-spas  301
+/industries/tobacco-shops.html  /industries/tobacco-shops  301
+/industries/index.html  /industries  301
+
+# Location pages
+/locations/arlington-merchant-services.html  /locations/arlington-merchant-services  301
+/locations/charleston-merchant-services.html  /locations/charleston-merchant-services  301
+/locations/charlotte-merchant-services.html  /locations/charlotte-merchant-services  301
+/locations/chesapeake-merchant-services.html  /locations/chesapeake-merchant-services  301
+/locations/columbia-sc-merchant-services.html  /locations/columbia-sc-merchant-services  301
+/locations/durham-merchant-services.html  /locations/durham-merchant-services  301
+/locations/greensboro-merchant-services.html  /locations/greensboro-merchant-services  301
+/locations/greenville-sc-merchant-services.html  /locations/greenville-sc-merchant-services  301
+/locations/hilton-head-merchant-services.html  /locations/hilton-head-merchant-services  301
+/locations/myrtle-beach-merchant-services.html  /locations/myrtle-beach-merchant-services  301
+/locations/norfolk-merchant-services.html  /locations/norfolk-merchant-services  301
+/locations/north-carolina-merchant-services.html  /locations/north-carolina-merchant-services  301
+/locations/raleigh-merchant-services.html  /locations/raleigh-merchant-services  301
+/locations/richmond-merchant-services.html  /locations/richmond-merchant-services  301
+/locations/roanoke-merchant-services.html  /locations/roanoke-merchant-services  301
+/locations/south-carolina-merchant-services.html  /locations/south-carolina-merchant-services  301
+/locations/spartanburg-merchant-services.html  /locations/spartanburg-merchant-services  301
+/locations/virginia-beach-merchant-services.html  /locations/virginia-beach-merchant-services  301
+/locations/virginia-merchant-services.html  /locations/virginia-merchant-services  301
+/locations/wilmington-merchant-services.html  /locations/wilmington-merchant-services  301
+/locations/winston-salem-merchant-services.html  /locations/winston-salem-merchant-services  301
+/locations/index.html  /locations  301
+
+# Blog pages
+/blog/clover-vs-nrs-pos-comparison.html  /blog/clover-vs-nrs-pos-comparison  301
+/blog/credit-card-processing-fees-explained.html  /blog/credit-card-processing-fees-explained  301
+/blog/what-is-a-cash-discount-program.html  /blog/what-is-a-cash-discount-program  301

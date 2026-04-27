@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" width="520" height="200">
+  <defs>
+    <clipPath id="shieldClip">
+      <path d="M22,22 C22,10 30,5 42,5 L133,5 C145,5 153,11 153,24 L153,106 Q153,153 87,182 Q22,153 22,106 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Shield background -->
+  <path d="M22,22 C22,10 30,5 42,5 L133,5 C145,5 153,11 153,24 L153,106 Q153,153 87,182 Q22,153 22,106 Z"
+        fill="#d6d6d6"/>
+
+  <!-- Gray diagonal bands (-45°) clipped to shield -->
+  <g clip-path="url(#shieldClip)" stroke="#888888" stroke-width="22" stroke-linecap="butt">
+    <line x1="-200" y1="224"  x2="400" y2="-376"/>
+    <line x1="-200" y1="262"  x2="400" y2="-338"/>
+    <line x1="-200" y1="300"  x2="400" y2="-300"/>
+    <line x1="-200" y1="338"  x2="400" y2="-262"/>
+    <line x1="-200" y1="376"  x2="400" y2="-224"/>
+    <line x1="-200" y1="414"  x2="400" y2="-186"/>
+    <line x1="-200" y1="452"  x2="400" y2="-148"/>
+    <line x1="-200" y1="490"  x2="400" y2="-110"/>
+    <line x1="-200" y1="528"  x2="400" y2="-72"/>
+  </g>
+
+  <!-- Green diagonal bands (+45°) clipped to shield -->
+  <g clip-path="url(#shieldClip)" stroke="#4d8b1c" stroke-width="22" stroke-linecap="butt">
+    <line x1="-200" y1="-338" x2="400" y2="262"/>
+    <line x1="-200" y1="-300" x2="400" y2="300"/>
+    <line x1="-200" y1="-262" x2="400" y2="338"/>
+    <line x1="-200" y1="-224" x2="400" y2="376"/>
+    <line x1="-200" y1="-186" x2="400" y2="414"/>
+    <line x1="-200" y1="-148" x2="400" y2="452"/>
+    <line x1="-200" y1="-110" x2="400" y2="490"/>
+    <line x1="-200" y1="-72"  x2="400" y2="528"/>
+    <line x1="-200" y1="-34"  x2="400" y2="566"/>
+  </g>
+
+  <!-- Weave: gray-on-top diamond patches at alternating intersections -->
+  <g clip-path="url(#shieldClip)" fill="#888888">
+    <polygon points="138,27 127,38 138,49 149,38"/>
+    <polygon points="100,27 89,38 100,49 111,38"/>
+    <polygon points="138,65 127,76 138,87 149,76"/>
+    <polygon points="62,27 51,38 62,49 73,38"/>
+    <polygon points="100,65 89,76 100,87 111,76"/>
+    <polygon points="138,103 127,114 138,125 149,114"/>
+    <polygon points="24,27 13,38 24,49 35,38"/>
+    <polygon points="62,65 51,76 62,87 73,76"/>
+    <polygon points="100,103 89,114 100,125 111,114"/>
+    <polygon points="138,141 127,152 138,163 149,152"/>
+    <polygon points="24,65 13,76 24,87 35,76"/>
+    <polygon points="62,103 51,114 62,125 73,114"/>
+    <polygon points="100,141 89,152 100,163 111,152"/>
+    <polygon points="24,103 13,114 24,125 35,114"/>
+    <polygon points="62,141 51,152 62,163 73,152"/>
+    <polygon points="24,141 13,152 24,163 35,152"/>
+  </g>
+
+  <!-- T lettermark centered at (87, 94) -->
+  <g fill="rgba(255,255,255,0.93)">
+    <rect x="62" y="75" width="50" height="13" rx="2"/>
+    <rect x="81" y="88" width="12" height="40" rx="1"/>
+  </g>
+
+  <!-- Shield outline -->
+  <path d="M22,22 C22,10 30,5 42,5 L133,5 C145,5 153,11 153,24 L153,106 Q153,153 87,182 Q22,153 22,106 Z"
+        fill="none" stroke="#6a6a6a" stroke-width="2.5"/>
+
+  <!-- TOTAL -->
+  <text x="170" y="76"
+        font-family="Arial Black, Arial, sans-serif"
+        font-weight="900" font-size="54"
+        fill="#3d7318" letter-spacing="1">TOTAL</text>
+
+  <!-- Payment -->
+  <text x="172" y="120"
+        font-family="Arial, sans-serif"
+        font-weight="400" font-size="38"
+        fill="#ffffff">Payment</text>
+
+  <!-- Solutions -->
+  <text x="172" y="160"
+        font-family="Arial, sans-serif"
+        font-weight="400" font-size="38"
+        fill="#ffffff">Solutions</text>
+</svg>

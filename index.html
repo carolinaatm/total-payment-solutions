@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" as="image" href="/Media/homepage-hero.webp" type="image/webp" fetchpriority="high" media="(min-width: 769px)">
+<link rel="preload" as="image" href="/Media/homepage-hero-sm.webp" type="image/webp" fetchpriority="high" media="(max-width: 768px)">
+
+<title>Total Payment Solutions | No-Fee Credit Card Processing</title>
+<meta name="description" content="Eliminate up to 100% of your credit card processing fees. Free terminals, zero-fee programs, and local merchant services for NC, SC & VA businesses.">
+<link rel="canonical" href="https://totalpaysolutions.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://totalpaysolutions.com/">
+<meta property="og:title" content="Total Payment Solutions | Eliminate Credit Card Processing Fees">
+<meta property="og:description" content="Eliminate up to 100% of your credit card processing fees. Free terminals, zero-fee programs, and local merchant services for NC, SC &amp; VA businesses.">
+<meta property="og:image" content="https://totalpaysolutions.com/Media/homepage-hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Total Payment Solutions | No-Fee Credit Card Processing">
+<meta name="twitter:description" content="Eliminate credit card processing fees with Total Payment Solutions. Cash discount programs, Clover POS & merchant services for NC, SC & VA businesses. $100">
+<meta name="twitter:image" content="https://totalpaysolutions.com/Media/tps-social-share.jpg">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --green:       #5fa827;
+    --green-dark:  #4d8b1c;
+    --green-glow:  #8fd64e;
+    --orange:      #E87722;
+    --orange-dark: #c9661a;
+
+    /* Dark palette */
+    --bg:          #0d1b2a;
+    --bg-alt:      #0a1520;
+    --bg-card:     #112236;
+    --bg-card2:    #0f1e30;
+    --border:      rgba(255,255,255,0.08);
+    --border-green: rgba(95,168,39,0.3);
+
+    --text:        #e8edf2;
+    --text-muted:  rgba(232,237,242,0.6);
+    --text-dim:    rgba(232,237,242,0.38);
+    --white:       #ffffff;
+  }
+
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; }
+
+  a { color: var(--green-glow); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .btn-orange {
+    display: inline-block; background: var(--orange); color: #fff;
+    padding: 14px 30px; border-radius: 4px; font-weight: 700;
+    font-size: 1rem; letter-spacing: .3px; border: none; cursor: pointer;
+    transition: background .2s;
+  }
+  .btn-orange:hover { background: var(--orange-dark); text-decoration: none; color: #fff; }
+
+  .btn-outline {
+    display: inline-block; border: 2px solid rgba(255,255,255,.5); color: #fff;
+    padding: 12px 28px; border-radius: 4px; font-weight: 600;
+    font-size: 1rem; transition: all .2s; cursor: pointer;
+  }
+  .btn-outline:hover { background: rgba(255,255,255,.1); text-decoration: none; color: #fff; border-color: #fff; }
+
+  /* ── HEADER ── */
+  header {
+    position: sticky; top: 0; z-index: 999;
+    background: rgba(13,27,42,0.96);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 2px 20px rgba(0,0,0,.4);
+  }
+  .header-inner {
+    max-width: 1180px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 24px;
+  }
+  .logo { display: flex; align-items: center; }
+  .logo img { height: 64px; width: auto; display: block; }
+
+  nav { display: flex; gap: 28px; align-items: center; }
+  nav a { color: var(--text-muted); font-weight: 500; font-size: .93rem; transition: color .2s; }
+  nav a:hover { color: var(--green-glow); text-decoration: none; }
+
+  .header-right { display: flex; align-items: center; gap: 16px; }
+  .header-phone { font-weight: 700; color: var(--text); font-size: .95rem; }
+  .header-phone span { color: var(--green-glow); }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, #060e18 0%, #0d1b2a 55%, #0d2118 100%);
+    padding: 80px 24px 70px; position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; right: -60px; top: -60px;
+    width: 520px; height: 520px;
+    background: radial-gradient(circle, rgba(95,168,39,.13) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero::after {
+    content: '';
+    position: absolute; left: -80px; bottom: -80px;
+    width: 380px; height: 380px;
+    background: radial-gradient(circle, rgba(232,119,34,.07) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero-inner {
+    max-width: 1180px; margin: 0 auto; position: relative;
+    display: grid; grid-template-columns: 1fr 420px; gap: 48px; align-items: center;
+  }
+  .hero-badge {
+    display: inline-block; background: rgba(95,168,39,.18); color: var(--green-glow);
+    border: 1px solid rgba(95,168,39,.4);
+    padding: 5px 14px; border-radius: 20px; font-size: .8rem;
+    font-weight: 600; letter-spacing: .5px; margin-bottom: 18px; text-transform: uppercase;
+  }
+  .hero h1 {
+    font-size: 2.75rem; font-weight: 900; color: #fff; line-height: 1.15;
+    margin-bottom: 18px; letter-spacing: -.5px;
+  }
+  .hero h1 span { color: var(--green-glow); }
+  .hero-sub {
+    font-size: 1.12rem; color: rgba(255,255,255,.88); margin-bottom: 28px; max-width: 540px;
+  }
+  .hero-ctas { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin-bottom: 36px; }
+  .hero-guarantee {
+    display: flex; align-items: center; gap: 10px;
+    background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12);
+    border-radius: 8px; padding: 12px 18px; max-width: 480px;
+  }
+  .hero-guarantee .shield-icon { font-size: 1.6rem; }
+  .hero-guarantee p { color: rgba(255,255,255,.85); font-size: .88rem; }
+  .hero-guarantee strong { color: var(--green-glow); }
+
+  /* Hero form card — dark glass */
+  .hero-form-card {
+    background: rgba(17,34,54,0.92);
+    border: 1px solid rgba(95,168,39,.25);
+    border-radius: 12px; padding: 32px 28px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.5);
+    backdrop-filter: blur(8px);
+  }
+  .hero-form-card h3 {
+    font-size: 1.18rem; font-weight: 800; color: #fff;
+    margin-bottom: 4px; text-align: center;
+  }
+  .hero-form-card p { font-size: .82rem; color: var(--text-muted); text-align: center; margin-bottom: 20px; }
+  .form-row { margin-bottom: 12px; }
+  .form-row input, .form-row select {
+    width: 100%; padding: 11px 14px;
+    background: rgba(255,255,255,.07);
+    border: 1.5px solid rgba(255,255,255,.12);
+    border-radius: 5px; font-size: .92rem; color: #fff;
+    transition: border-color .2s;
+  }
+  .form-row input::placeholder { color: rgba(255,255,255,.6); }
+  .form-row input:focus, .form-row select:focus {
+    outline: none; border-color: var(--green);
+    background: rgba(255,255,255,.1);
+  }
+  .form-row select { color: rgba(255,255,255,.85); }
+  .form-row select option { color: #333; background: #fff; }
+  .form-submit {
+    width: 100%; padding: 14px; background: var(--orange); color: #fff;
+    border: none; border-radius: 5px; font-size: 1rem; font-weight: 800;
+    cursor: pointer; transition: background .2s; letter-spacing: .3px;
+    margin-top: 4px;
+  }
+  .form-submit:hover { background: var(--orange-dark); }
+  .form-fine { font-size: .74rem; color: var(--text-dim); text-align: center; margin-top: 8px; }
+
+  /* ── TRUST BAR ── */
+  .trust-bar { background: rgba(6,14,24,0.95); padding: 20px 24px; border-bottom: 1px solid var(--border); }
+  .trust-inner {
+    max-width: 1180px; margin: 0 auto;
+    display: flex; justify-content: space-around; align-items: center;
+    flex-wrap: wrap; gap: 16px;
+  }
+  .trust-item { display: flex; align-items: center; gap: 9px; color: var(--text-muted); }
+  .trust-item .icon { font-size: 1.3rem; }
+  .trust-item span { font-size: .82rem; font-weight: 600; letter-spacing: .3px; }
+
+  /* ── SECTION GENERIC ── */
+  .section { padding: 72px 24px; }
+  .section-alt { background: var(--bg-alt); }
+  .section-dark { background: var(--bg); }
+  .container { max-width: 1180px; margin: 0 auto; }
+  .section-label {
+    text-align: center; color: var(--green-glow); font-weight: 700;
+    font-size: .82rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px;
+  }
+  .section-title {
+    text-align: center; font-size: 2rem; font-weight: 800;
+    color: #fff; margin-bottom: 14px; line-height: 1.25;
+  }
+  .section-sub {
+    text-align: center; color: var(--text-muted); font-size: 1rem;
+    max-width: 580px; margin: 0 auto 48px;
+  }
+
+  /* ── HOW IT WORKS ── */
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  .step {
+    text-align: center; padding: 32px 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(0,0,0,.3);
+    border-top: 4px solid var(--green);
+    position: relative;
+  }
+  .step-num {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 48px; height: 48px; background: var(--green); color: #fff;
+    font-size: 1.3rem; font-weight: 900; border-radius: 50%; margin-bottom: 16px;
+  }
+  .step h3 { font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+  .step p { font-size: .9rem; color: var(--text-muted); }
+
+  /* ── SERVICES GRID ── */
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .service-card {
+    background: var(--bg-card); border-radius: 10px; padding: 28px 24px;
+    border: 1px solid var(--border);
+    box-shadow: 0 3px 20px rgba(0,0,0,.3);
+    transition: transform .2s, box-shadow .2s, border-color .2s;
+    border-bottom: 3px solid transparent;
+  }
+  .service-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,.4); border-bottom-color: var(--green); }
+  .service-icon { font-size: 2rem; margin-bottom: 12px; }
+  .service-card h3 { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+  .service-card p  { font-size: .87rem; color: var(--text-muted); margin-bottom: 14px; }
+  .service-link { font-size: .85rem; font-weight: 600; color: var(--green-glow); }
+  .service-card.featured {
+    background: linear-gradient(135deg, #2a5a0a, #1a3a06);
+    border: 1px solid rgba(95,168,39,.4);
+    border-bottom: 3px solid var(--green-glow);
+  }
+  .service-card.featured h3,
+  .service-card.featured p { color: #fff; }
+  .service-card.featured .service-link { color: var(--green-glow); }
+
+  /* ── INDUSTRIES ── */
+  .industries-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .industry-card {
+    background: var(--bg-card); border-radius: 10px; overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: 0 3px 20px rgba(0,0,0,.3);
+    transition: transform .2s, border-color .2s; cursor: pointer;
+  }
+  .industry-card:hover { transform: translateY(-4px); border-color: rgba(95,168,39,.35); }
+  .industry-thumb {
+    height: 100px; background: var(--bg-alt);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2.6rem;
+  }
+  .industry-body { padding: 16px; }
+  .industry-body h3 { font-size: .95rem; font-weight: 700; color: #fff; margin-bottom: 4px; }
+  .industry-body p  { font-size: .8rem; color: var(--text-muted); margin-bottom: 8px; }
+  .industry-body a  { font-size: .8rem; font-weight: 600; color: var(--green-glow); }
+
+  .ind-1 .industry-thumb { background: linear-gradient(135deg, #0e2a0e, #1a4a1a); }
+  .ind-2 .industry-thumb { background: linear-gradient(135deg, #2a0e0e, #4a1a1a); }
+  .ind-3 .industry-thumb { background: linear-gradient(135deg, #0e1e2a, #1a324a); }
+  .ind-4 .industry-thumb { background: linear-gradient(135deg, #1e0e2a, #341a4a); }
+  .ind-5 .industry-thumb { background: linear-gradient(135deg, #0e2a1e, #1a4a34); }
+  .ind-6 .industry-thumb { background: linear-gradient(135deg, #2a1e0e, #4a341a); }
+  .ind-7 .industry-thumb { background: linear-gradient(135deg, #0a0a1e, #1a1a36); }
+
+  /* ── GUARANTEE BAND ── */
+  .guarantee-band {
+    background: linear-gradient(135deg, #2a5a0a 0%, #1a3a06 100%);
+    padding: 48px 24px; text-align: center;
+    border-top: 1px solid rgba(95,168,39,.3);
+    border-bottom: 1px solid rgba(95,168,39,.3);
+  }
+  .guarantee-band h2 {
+    font-size: 2.1rem; font-weight: 900; color: #fff; margin-bottom: 10px;
+  }
+  .guarantee-band p { color: rgba(255,255,255,.82); font-size: 1.05rem; margin-bottom: 24px; max-width: 560px; margin-left: auto; margin-right: auto; }
+  .guarantee-points {
+    display: flex; justify-content: center; gap: 40px;
+    flex-wrap: wrap; margin-bottom: 28px;
+  }
+  .g-point { display: flex; align-items: center; gap: 8px; color: #fff; font-weight: 600; font-size: .95rem; }
+  .g-point::before { content: '✓'; font-size: 1.1rem; color: var(--green-glow); font-weight: 900; }
+
+  /* ── SOCIAL PROOF ── */
+  .stats-row {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 0; border-radius: 10px; overflow: hidden;
+    box-shadow: 0 4px 28px rgba(0,0,0,.35);
+    border: 1px solid var(--border);
+  }
+  .stat-item {
+    background: var(--bg-card); padding: 32px 24px; text-align: center;
+    border-right: 1px solid var(--border);
+  }
+  .stat-item:last-child { border-right: none; }
+  .stat-num { font-size: 2.2rem; font-weight: 900; color: var(--green-glow); }
+  .stat-label { font-size: .85rem; color: var(--text-muted); margin-top: 4px; }
+
+  .testimonials { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+  .testimonial {
+    background: var(--bg-card); border-radius: 10px; padding: 28px 24px;
+    border: 1px solid var(--border);
+    box-shadow: 0 3px 20px rgba(0,0,0,.3); position: relative;
+  }
+  .testimonial::before {
+    content: '"'; position: absolute; top: 14px; left: 20px;
+    font-size: 4rem; color: var(--green); opacity: .25; line-height: 1;
+    font-family: Georgia, serif;
+  }
+  .testimonial-text { font-size: .92rem; color: var(--text-muted); font-style: italic; margin-bottom: 16px; padding-top: 20px; }
+  .testimonial-author { display: flex; align-items: center; gap: 12px; }
+  .author-avatar {
+    width: 42px; height: 42px; border-radius: 50%;
+    background: var(--bg-alt); border: 1px solid var(--border);
+    display: flex; align-items: center;
+    justify-content: center; font-size: 1.2rem;
+  }
+  .author-name { font-weight: 700; font-size: .88rem; color: #fff; }
+  .author-biz  { font-size: .78rem; color: var(--text-dim); }
+  .stars { color: #f5a623; font-size: .85rem; }
+
+  /* ── LEAD FORM SECTION ── */
+  .lead-section { background: var(--bg-alt); padding: 72px 24px; border-top: 1px solid var(--border); }
+  .lead-inner {
+    max-width: 760px; margin: 0 auto; text-align: center;
+  }
+  .lead-inner h2 { font-size: 2rem; font-weight: 900; color: #fff; margin-bottom: 10px; }
+  .lead-inner p  { color: var(--text-muted); margin-bottom: 36px; }
+  .lead-form-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+    text-align: left;
+  }
+  .lead-form-grid .full { grid-column: 1 / -1; }
+  .lead-form-grid input,
+  .lead-form-grid select {
+    width: 100%; padding: 13px 16px;
+    background: rgba(255,255,255,.06); border: 1.5px solid rgba(255,255,255,.12);
+    border-radius: 5px; font-size: .93rem; color: #fff;
+    transition: border-color .2s;
+  }
+  .lead-form-grid input::placeholder { color: rgba(255,255,255,.4); }
+  .lead-form-grid select { color: rgba(255,255,255,.6); }
+  .lead-form-grid select option { color: #333; background: #fff; }
+  .lead-form-grid input:focus,
+  .lead-form-grid select:focus { outline: none; border-color: var(--green); background: rgba(255,255,255,.1); }
+  .lead-submit {
+    grid-column: 1 / -1; width: 100%; padding: 16px;
+    background: var(--orange); color: #fff; border: none;
+    border-radius: 5px; font-size: 1.08rem; font-weight: 800;
+    cursor: pointer; transition: background .2s; letter-spacing: .3px;
+  }
+  .lead-submit:hover { background: var(--orange-dark); }
+  .lead-fine { font-size: .77rem; color: var(--text-dim); margin-top: 12px; }
+
+  /* ── CLOVER CALLOUT ── */
+  .clover-band {
+    background: var(--bg-card2);
+    padding: 48px 24px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .clover-inner {
+    max-width: 1180px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 32px; flex-wrap: wrap;
+  }
+  .clover-text h2 { font-size: 1.7rem; font-weight: 800; color: #fff; margin-bottom: 8px; }
+  .clover-text p  { font-size: .95rem; color: var(--text-muted); max-width: 500px; }
+  .clover-badges { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+  .clover-badge {
+    background: rgba(255,255,255,.06); border: 1.5px solid var(--border-green); border-radius: 8px;
+    padding: 10px 18px; font-size: .82rem; font-weight: 600;
+    color: var(--text); display: flex; align-items: center; gap: 6px;
+  }
+
+  /* ── FOOTER ── */
+  footer { background: #060e16; padding: 56px 24px 0; border-top: 1px solid var(--border); }
+  .footer-grid {
+    max-width: 1180px; margin: 0 auto;
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px; padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+  .footer-brand .footer-logo { font-size: 1.6rem; font-weight: 900; color: var(--green-glow); margin-bottom: 8px; }
+  .footer-tagline { font-size: .84rem; color: rgba(255,255,255,.45); margin-bottom: 16px; max-width: 260px; line-height: 1.5; }
+  .footer-contact p { font-size: .84rem; color: rgba(255,255,255,.6); margin-bottom: 4px; }
+  .footer-contact a { color: rgba(255,255,255,.6); }
+  .footer-contact strong { color: #fff; }
+
+  .footer-col h4 { font-size: .88rem; font-weight: 700; color: #fff; margin-bottom: 16px; text-transform: uppercase; letter-spacing: .5px; }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 8px; }
+  .footer-col ul li a { font-size: .84rem; color: rgba(255,255,255,.5); transition: color .2s; }
+  .footer-col ul li a:hover { color: var(--green-glow); text-decoration: none; }
+
+  .footer-bottom {
+    max-width: 1180px; margin: 0 auto;
+    padding: 20px 0; display: flex;
+    justify-content: space-between; align-items: flex-start;
+    gap: 16px; flex-wrap: wrap;
+  }
+  .footer-legal { font-size: .74rem; color: rgba(255,255,255,.3); max-width: 600px; line-height: 1.5; }
+  .footer-copy { font-size: .78rem; color: rgba(255,255,255,.35); }
+
+/* ── NAV DROPDOWNS ── */
+.nav-dropdown { position: relative; display: flex; align-items: center; }
+.nav-drop-btn {
+  background: none; border: none; cursor: pointer;
+  color: var(--text-muted); font-weight: 500; font-size: .93rem;
+  transition: color .2s; display: flex; align-items: center; gap: 3px;
+  padding: 0; font-family: 'Segoe UI', Arial, sans-serif; line-height: 1;
+}
+.nav-drop-btn:hover,
+.nav-dropdown.open .nav-drop-btn { color: var(--green-glow); }
+.nav-drop-menu {
+  display: none; position: absolute; top: calc(100% + 18px); left: 50%;
+  transform: translateX(-50%);
+  background: #0f1e30; border: 1px solid rgba(95,168,39,0.3);
+  border-radius: 8px; min-width: 230px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.6);
+  z-index: 1001; overflow: hidden;
+}
+.nav-dropdown.open .nav-drop-menu { display: block; animation: dropFadeIn .15s ease; }
+@keyframes dropFadeIn { from { opacity:0; transform:translateX(-50%) translateY(-6px); } to { opacity:1; transform:translateX(-50%) translateY(0); } }
+.nav-drop-menu a {
+  display: block; padding: 11px 20px;
+  color: rgba(232,237,242,0.75); font-size: .9rem; font-weight: 500;
+  transition: background .15s, color .15s;
+  border-bottom: 1px solid rgba(255,255,255,.05);
+  text-decoration: none;
+}
+.nav-drop-menu a:last-child { border-bottom: none; }
+.nav-drop-menu a:hover { background: rgba(95,168,39,0.12); color: var(--green-glow); }
+@media (max-width: 900px) {
+  .nav-drop-menu { left: 0; transform: none; min-width: 200px; }
+}
+.hamburger {
+  display: none; background: none; border: 1px solid rgba(255,255,255,.28);
+  color: #fff; font-size: 1.3rem; line-height: 1; padding: 7px 13px;
+  border-radius: 4px; cursor: pointer; margin-left: 12px;
+}
+.hamburger:hover { border-color: #8fd64e; color: #8fd64e; }
+@media (max-width: 600px) {
+  .hamburger { display: block; }
+  nav {
+    display: none; position: absolute; top: 100%; left: 0; right: 0;
+    background: #0f1e30; border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid rgba(255,255,255,.1); flex-direction: column;
+    align-items: flex-start; padding: 12px 0; gap: 0; z-index: 998;
+  }
+  nav.mobile-open { display: flex; }
+  nav a { padding: 12px 20px; width: 100%; border-bottom: 1px solid rgba(255,255,255,.05); font-size: 1rem; }
+  .nav-dropdown { flex-direction: column; align-items: flex-start; width: 100%; }
+  .nav-drop-btn { padding: 12px 20px; width: 100%; font-size: 1rem; border-bottom: 1px solid rgba(255,255,255,.05); }
+  .nav-drop-menu { position: static !important; transform: none !important; min-width: 100%; border-radius: 0; border: none; box-shadow: none; background: rgba(255,255,255,.04); }
+  .nav-drop-menu a { padding-left: 36px; }
+  .header-right .header-phone { display: none; }
+}
+
+  .page-feature-img { width: 100%; overflow: hidden; line-height: 0; max-height: 420px; }
+  .page-feature-img img { width: 100%; height: 420px; object-fit: cover; object-position: center; display: block; }
+  @media (max-width: 768px) { .page-feature-img img { height: 220px; } }
+  
+.footer-businesses-inline{margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);}
+.footer-biz-label-inline{display:block;font-size:.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(232,237,242,.35);margin-bottom:14px;}
+.footer-biz-logos-inline{display:flex!important;flex-direction:row!important;align-items:center!important;gap:20px;flex-wrap:wrap;}
+.footer-biz-logos-inline a{display:flex;align-items:center;opacity:.65;transition:opacity .2s;}
+.footer-biz-logos-inline a:hover{opacity:1;}
+.footer-biz-logos-inline img{height:70px!important;width:auto!important;max-width:220px!important;object-fit:contain!important;display:block!important;}
+
+</style>
+<script>
+(function(){
+  var loaded = false;
+  function loadRecaptcha() {
+    if (loaded) return;
+    loaded = true;
+    var s = document.createElement('script');
+    s.src = 'https://www.google.com/recaptcha/api.js?onload=renderRecaptcha&render=explicit';
+    s.async = true; s.defer = true;
+    document.head.appendChild(s);
+  }
+  // Load on user interaction or when form comes into view
+  ['mousedown','keydown','touchstart','scroll'].forEach(function(e){
+    document.addEventListener(e, loadRecaptcha, {once:true, passive:true});
+  });
+  // Intersection Observer fallback: load when any recaptcha div is near viewport
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) { loadRecaptcha(); obs.disconnect(); }
+      });
+    }, {rootMargin: '200px'});
+    document.querySelectorAll('[id^="recaptcha"]').forEach(function(el){ obs.observe(el); });
+  }
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Total Payment Solutions",
+  "image": "https://totalpaysolutions.com/Media/Total%20Payment%20New%20Logo.png",
+  "description": "NC-based merchant services provider. Cash discount programs, Clover POS, and credit card processing for NC, SC & VA businesses since 2014.",
+  "telephone": "1-844-590-5044",
+  "url": "https://totalpaysolutions.com",
+  "areaServed": ["North Carolina", "South Carolina", "Virginia"],
+  "sameAs": ["https://totalpaysolutions.com"]
+}
+</script>
+<!-- Analytics deferred until idle for LCP performance -->
+<script>
+function _loadAnalytics() {
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-M7RJDPMX');
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "w1vro80gp8");
+}
+if ('requestIdleCallback' in window) {
+  requestIdleCallback(_loadAnalytics, {timeout: 4000});
+} else {
+  window.addEventListener('load', function(){ setTimeout(_loadAnalytics, 3500); });
+}
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7RJDPMX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ═══════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════ -->
+<header>
+  <div class="header-inner">
+    <div class="logo">
+      <a href="/"><picture><source media="(max-width: 768px)" srcset="/Media/tps-logo-nav-sm.webp" type="image/webp"><source srcset="/Media/tps-logo-nav.webp" type="image/webp"><img src="/Media/tps-logo-nav.png" alt="Total Payment Solutions" width="864" height="432"></picture></a>
+    </div>
+    <nav>
+      <a href="/">Home</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">Services &#9662;</button>
+        <div class="nav-drop-menu">
+          <a href="cash-discount-program.html">Cash Discount Program</a>
+          <a href="credit-card-processing.html">Credit Card Processing</a>
+          <a href="atm-services.html">ATM Services</a>
+          <a href="nrs.html">NRS POS Systems</a>
+          <a href="clover-pos-systems.html">Clover POS Systems</a>
+          <a href="mobile-payment-processing.html">Mobile Payments</a>
+          <a href="high-risk-merchant-accounts.html">High-Risk Processing</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">Industries &#9662;</button>
+        <div class="nav-drop-menu">
+          <a href="industries/convenience-stores.html">Convenience Stores</a>
+          <a href="industries/gas-stations.html">Gas Stations</a>
+          <a href="industries/restaurants.html">Restaurants &amp; Bars</a>
+          <a href="industries/retail.html">Retail</a>
+          <a href="industries/healthcare.html">Healthcare</a>
+          <a href="industries/contractors.html">Contractors</a>
+          <a href="industries/salons-spas.html">Salons &amp; Spas</a>
+          <a href="industries/tobacco-shops.html">Tobacco Shops</a>
+          <a href="industries/carnivals-fairs-events.html">Carnivals &amp; Events</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">Locations &#9662;</button>
+        <div class="nav-drop-menu">
+          <a href="/locations/north-carolina-merchant-services">North Carolina</a>
+          <a href="/locations/south-carolina-merchant-services">South Carolina</a>
+          <a href="/locations/virginia-merchant-services">Virginia</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="/faq">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-right">
+      <div class="header-phone">📞 <span>1-844-590-5044</span></div>
+      <a href="get-a-quote.html" class="btn-orange" style="padding:10px 22px;font-size:.88rem;">Get a Free Quote</a>
+      <button class="hamburger" id="hamburger-btn" aria-label="Open menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="page-feature-img">
+<picture>
+  <source media="(max-width: 768px)" srcset="/Media/homepage-hero-sm.webp" type="image/webp">
+      <source srcset="/Media/homepage-hero.webp" type="image/webp">
+  <img src="/Media/homepage-hero.jpg" alt="Merchant accepting mobile payment at bar counter — Total Pay Solutions" width="1400" height="420" fetchpriority="high" loading="eager">
+</picture>
+</div>
+
+
+
+<!-- ═══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">🛡 NC · SC · VA Merchant Services</div>
+      <h1>Eliminate Up to <span>100%</span> of Your Credit Card Processing Fees</h1>
+      <p class="hero-sub">
+        Free terminal. Zero monthly processing fees. Local support across NC, SC &amp; VA.
+        We set everything up — you don't have to do a thing.
+      </p>
+      <div class="hero-ctas">
+        <a href="#quote" class="btn-orange">Claim Your Free Terminal →</a>
+        <a href="#how" class="btn-outline">See How It Works</a>
+      </div>
+      <div class="hero-guarantee">
+        <div class="shield-icon">🛡</div>
+        <p><strong>We guarantee your monthly bill will be $100 or less.</strong><br>
+        Serving convenience stores, tobacco shops, carnivals &amp; event vendors.</p>
+      </div>
+    </div>
+
+    <div class="hero-form-card" id="quote">
+      <h2 style="font-size:1.5rem; font-weight:800; color:#ffffff; margin-bottom:6px;">See How Much You Could Save</h2>
+      <p>Free analysis · No contracts · No pressure</p>
+      <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&amp;orgId=00D5e000002TuAN" method="POST" onsubmit="return validateRecaptcha(this)">
+        <input type="hidden" name="captcha_settings" value='{"keyname":"Totalpaynew","fallback":"true","orgId":"00D5e000002TuAN","ts":""}'>
+        <input type="hidden" name="oid" value="00D5e000002TuAN">
+        <input type="hidden" name="retURL" value="https://totalpaysolutions.com/thank-you.html">
+        <input type="hidden" name="lead_source" value="Website">
+        <input type="hidden" name="00N5e00000bDdyz" value="Total Pay Solutions">
+        <div class="form-row"><input type="text" name="first_name" placeholder="First Name" required></div>
+        <div class="form-row"><input type="text" name="last_name" placeholder="Last Name" required></div>
+        <div class="form-row"><input type="text" name="company" placeholder="Business Name" required></div>
+        <div class="form-row"><input type="tel" name="phone" placeholder="Phone Number" required></div>
+        <div class="form-row"><input type="email" name="email" placeholder="Email Address" required></div>
+        <div class="form-row">
+          <select name="00N5e00000eSBBz" aria-label="Business Type" required>
+            <option value="" disabled selected>Business Type</option>
+            <option value="Convenience Store">Convenience Store</option>
+            <option value="Tobacco / Smoke Shop">Tobacco / Smoke Shop</option>
+            <option value="Carnival / Fair / Event">Carnival / Fair / Event</option>
+            <option value="Concessionaire">Concessionaire</option>
+            <option value="Restaurant">Restaurant</option>
+            <option value="Retail">Retail</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <select name="description" aria-label="Monthly Credit Card Volume" required>
+            <option value="" disabled selected>Monthly Credit Card Volume</option>
+            <option value="Under $5,000">Under $5,000</option>
+            <option value="$5,000 – $15,000">$5,000 – $15,000</option>
+            <option value="$15,000 – $50,000">$15,000 – $50,000</option>
+            <option value="$50,000+">$50,000+</option>
+          </select>
+        </div>
+        <div id="recaptcha-hero" style="margin:12px 0; transform:scale(0.88); transform-origin:0 0;"></div>
+        <button type="submit" class="form-submit">Get My Free Quote →</button>
+        <p class="form-fine">We'll contact you within 1 business day. No spam, ever.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     TRUST BAR
+════════════════════════════════════════════ -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><span class="icon">🏦</span><span>Registered ISO · Wells Fargo Bank</span></div>
+    <div class="trust-item"><span class="icon">✅</span><span>Clover &amp; NRS Authorized Partner</span></div>
+    <div class="trust-item"><span class="icon">🔒</span><span>PCI / EMV Compliant</span></div>
+    <div class="trust-item"><span class="icon">📞</span><span>24/7 Local Support</span></div>
+    <div class="trust-item"><span class="icon">⭐</span><span>$100/Mo Guarantee</span></div>
+  </div>
+</div><!-- ═══════════════════════════════════════════
+     HOW IT WORKS
+════════════════════════════════════════════ -->
+<section class="section" id="how">
+  <div class="container">
+    <div class="section-label">Simple Process</div>
+    <h2 class="section-title">Get Started in 3 Easy Steps</h2>
+    <p class="section-sub">We handle everything. You start saving from day one.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Free Rate Analysis</h3>
+        <p>We review your current processing statements and show you exactly how much you're overpaying — no obligation, no pressure.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Free Terminal Setup</h3>
+        <p>We deliver and pre-program your free Clover terminal. A small 3.99% service fee is passed to card-paying customers — you keep 100% of your sale.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Start Saving Immediately</h3>
+        <p>Your monthly processing bill drops to $100 or less — guaranteed. Funds deposit to your account as fast as next business day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     GUARANTEE BAND
+════════════════════════════════════════════ -->
+<div class="guarantee-band">
+  <h2>Your Monthly Bill: $100 or Less. Guaranteed.</h2>
+  <p>We put it in writing. If your monthly processing bill is more than $100, we'll make it right.</p>
+  <div class="guarantee-points">
+    <div class="g-point">No hidden fees</div>
+    <div class="g-point">No long-term contracts</div>
+    <div class="g-point">Free terminal included</div>
+    <div class="g-point">Next-day funding</div>
+  </div>
+  <a href="#quote" class="btn-outline">Claim Your Free Terminal Today</a>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     SERVICES
+════════════════════════════════════════════ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-label">What We Offer</div>
+    <h2 class="section-title">Complete Payment Solutions for Your Business</h2>
+    <p class="section-sub">From zero-fee processing to POS systems, funding, and ATM services — we're your all-in-one business payments partner.</p>
+    <div class="services-grid">
+
+      <div class="service-card featured">
+        <div class="service-icon">💳</div>
+        <h3>Cash Discount Program</h3>
+        <p>Eliminate up to 100% of your credit card processing fees. Free terminal. $100/mo or less — guaranteed.</p>
+        <a class="service-link" href="/cash-discount-program">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🖥️</div>
+        <h3>Clover POS Systems</h3>
+        <p>The most advanced POS on the market — pre-programmed to fit your business. Station, Mini, Flex &amp; Go.</p>
+        <a class="service-link" href="/clover-pos-systems">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <h3>Mobile Processing</h3>
+        <p>Accept cards anywhere — carnivals, fairs, outdoor markets. Battery-powered, offline-capable hardware.</p>
+        <a class="service-link" href="/mobile-payment-processing">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🌐</div>
+        <h3>E-Commerce Payments</h3>
+        <p>Secure online payment gateway and shopping cart integration for your website with local support.</p>
+        <a class="service-link" href="/ecommerce-payments">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🏧</div>
+        <h3>ATM Services</h3>
+        <p>ATM placement, management &amp; servicing for your location. Generate surcharge revenue and keep customers on-site.</p>
+        <a class="service-link" href="/atm-services">Learn More →</a>
+      </div>
+
+      <div class="service-card" style="border-color:rgba(100,160,255,.25); border-bottom-color:transparent;">
+        <div class="service-icon">🏪</div>
+        <h3>NRS POS System</h3>
+        <p>The #1 POS for c-stores &amp; tobacco shops. Built-in loyalty, age verification, tobacco scan data reporting, and integrated payment processing — all in one system.</p>
+        <a class="service-link" href="#nrs">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔒</div>
+        <h3>High-Risk Processing</h3>
+        <p>Approved where others say no. Tobacco, CBD, vape, firearms, and other high-risk categories — competitive rates, full compliance.</p>
+        <a class="service-link" href="/high-risk-merchant-accounts">Learn More →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     CLOVER CALLOUT
+════════════════════════════════════════════ -->
+<div class="clover-band">
+  <div class="clover-inner">
+    <div class="clover-text">
+      <h2>Authorized Clover Partner — Pre-Programmed for Your Business</h2>
+      <p>We don't just sell you a terminal and disappear. We configure every Clover system specifically for your business type, deliver it to your door, and provide ongoing local support.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px; align-items:flex-end;">
+      <div class="clover-badges">
+        <div class="clover-badge">🖥️ Clover Station</div>
+        <div class="clover-badge">📟 Clover Mini</div>
+        <div class="clover-badge">📱 Clover Flex</div>
+        <div class="clover-badge">💳 Clover Go</div>
+      </div>
+      <a href="#quote" class="btn-orange">Reserve Your Clover Today</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     NRS CALLOUT
+════════════════════════════════════════════ -->
+<div id="nrs" style="background:linear-gradient(135deg,#0a1828 0%,#0d1e34 100%); padding:48px 24px; border-top:1px solid rgba(100,160,255,.15); border-bottom:1px solid rgba(100,160,255,.15);">
+  <div style="max-width:1180px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:32px; flex-wrap:wrap;">
+    <div style="max-width:560px;">
+      <div style="display:inline-block; background:rgba(100,160,255,.12); color:#7eb8f7; border:1px solid rgba(100,160,255,.3); padding:4px 14px; border-radius:20px; font-size:.78rem; font-weight:700; letter-spacing:.5px; text-transform:uppercase; margin-bottom:14px;">Authorized NRS Reseller</div>
+      <h2 style="font-size:1.7rem; font-weight:800; color:#fff; margin-bottom:10px;">NRS POS — Built for C-Stores &amp; Tobacco Shops</h2>
+      <p style="font-size:.95rem; color:var(--text-muted); margin-bottom:18px;">National Retail Solutions is the fastest-growing POS platform for independent convenience stores and tobacco retailers. We sell, install, and support NRS systems locally across NC, SC &amp; VA — with integrated payment processing so everything works together.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:10px;">
+        <div style="background:rgba(100,160,255,.08); border:1px solid rgba(100,160,255,.2); border-radius:6px; padding:8px 14px; font-size:.82rem; font-weight:600; color:var(--text);">✓ Built-in Loyalty Program</div>
+        <div style="background:rgba(100,160,255,.08); border:1px solid rgba(100,160,255,.2); border-radius:6px; padding:8px 14px; font-size:.82rem; font-weight:600; color:var(--text);">✓ Age Verification</div>
+        <div style="background:rgba(100,160,255,.08); border:1px solid rgba(100,160,255,.2); border-radius:6px; padding:8px 14px; font-size:.82rem; font-weight:600; color:var(--text);">✓ Tobacco Scan Data</div>
+        <div style="background:rgba(100,160,255,.08); border:1px solid rgba(100,160,255,.2); border-radius:6px; padding:8px 14px; font-size:.82rem; font-weight:600; color:var(--text);">✓ EBT / SNAP Accepted</div>
+        <div style="background:rgba(100,160,255,.08); border:1px solid rgba(100,160,255,.2); border-radius:6px; padding:8px 14px; font-size:.82rem; font-weight:600; color:var(--text);">✓ Inventory Management</div>
+        <div style="background:rgba(100,160,255,.08); border:1px solid rgba(100,160,255,.2); border-radius:6px; padding:8px 14px; font-size:.82rem; font-weight:600; color:var(--text);">✓ Integrated Payments</div>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:14px; align-items:center;">
+      <div style="background:rgba(100,160,255,.06); border:1px solid rgba(100,160,255,.2); border-radius:12px; padding:28px 32px; text-align:center;">
+        <div style="font-size:3rem; margin-bottom:8px;">🏪</div>
+        <div style="font-size:1rem; font-weight:800; color:#fff; margin-bottom:4px;">NRS POS System</div>
+        <div style="font-size:.82rem; color:var(--text-muted); margin-bottom:16px;">Perfect for: C-Stores · Tobacco · Bodegas</div>
+        <a href="#quote" class="btn-orange" style="width:100%; display:block; text-align:center;">Get NRS Pricing →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     INDUSTRIES
+════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Who We Serve</div>
+    <h2 class="section-title">Built for the Businesses National Processors Ignore</h2>
+    <p class="section-sub">We specialize in the verticals where payment processing is hard — and make it simple.</p>
+    <div class="industries-grid">
+
+      <div class="industry-card ind-1">
+        <div class="industry-thumb">🏪</div>
+        <div class="industry-body">
+          <h3>Convenience Stores</h3>
+          <p>Cash discount + NRS POS + EBT/SNAP acceptance. The complete solution for independent c-stores.</p>
+          <a href="/industries/convenience-stores">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="industry-card ind-2">
+        <div class="industry-thumb">🚬</div>
+        <div class="industry-body">
+          <h3>Tobacco &amp; Smoke Shops</h3>
+          <p>High-risk approved. NRS POS with tobacco scan data + zero-fee processing with full compliance.</p>
+          <a href="/industries/tobacco-shops">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="industry-card ind-3">
+        <div class="industry-thumb">🎡</div>
+        <div class="industry-body">
+          <h3>Carnivals &amp; Fairs</h3>
+          <p>Mobile, offline-capable terminals built for the road and the midway.</p>
+          <a href="/industries/carnivals-fairs-events">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="industry-card ind-4">
+        <div class="industry-thumb">🍿</div>
+        <div class="industry-body">
+          <h3>Concessionaires</h3>
+          <p>Fast, reliable card acceptance at every stand, booth, and venue.</p>
+          <a href="/industries/concessionaires">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="industry-card ind-5">
+        <div class="industry-thumb">🍽️</div>
+        <div class="industry-body">
+          <h3>Restaurants</h3>
+          <p>Full Clover POS integration with table management and cash discount.</p>
+          <a href="/industries/restaurants">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="industry-card ind-6">
+        <div class="industry-thumb">🛍️</div>
+        <div class="industry-body">
+          <h3>Retail</h3>
+          <p>Clover Station POS + zero-fee processing for brick-and-mortar retail.</p>
+          <a href="/industries/retail">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="industry-card ind-7">
+        <div class="industry-thumb">🔒</div>
+        <div class="industry-body">
+          <h3>High-Risk &amp; CBD</h3>
+          <p>Approved where other processors say no. Competitive rates, full compliance.</p>
+          <a href="/high-risk-merchant-accounts">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="industry-card" style="background:linear-gradient(135deg,#2a5a0a,#1a3a06); border-color:rgba(95,168,39,.4); display:flex; flex-direction:column; justify-content:center; padding:24px;">
+        <div style="color:#fff; font-weight:800; font-size:1rem; margin-bottom:8px;">Don't see your industry?</div>
+        <div style="color:rgba(255,255,255,.7); font-size:.84rem; margin-bottom:16px;">We serve all business types. Get a free quote today.</div>
+        <a href="#quote" style="background:var(--green-glow); color:#0d1b2a; padding:10px 18px; border-radius:5px; font-weight:700; font-size:.88rem; text-align:center; display:block;">Get a Quote →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SOCIAL PROOF / STATS
+════════════════════════════════════════════ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-label">Trusted in NC, SC &amp; VA</div>
+    <h2 class="section-title">Real Businesses. Real Savings.</h2>
+    <p class="section-sub">Local businesses across the Carolinas and Virginia trust Total Payment Solutions to handle their payments.</p>
+
+    <div class="stats-row">
+      <div class="stat-item"><div class="stat-num">500+</div><div class="stat-label">Merchants Served</div></div>
+      <div class="stat-item"><div class="stat-num">$100</div><div class="stat-label">Or Less Monthly — Guaranteed</div></div>
+      <div class="stat-item"><div class="stat-num">2014</div><div class="stat-label">Serving NC Since</div></div>
+      <div class="stat-item"><div class="stat-num">3</div><div class="stat-label">States: NC · SC · VA</div></div>
+    </div>
+
+    <div class="testimonials">
+      <div class="testimonial">
+        <p class="testimonial-text">We were paying over $600 a month in processing fees. Our team set us up with the cash discount program and our bill dropped to under $100. Best decision we made.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">🏪</div>
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="author-name">Mike T.</div>
+            <div class="author-biz">Convenience Store — Raleigh, NC</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p class="testimonial-text">Getting a merchant account for our tobacco shop was nearly impossible. Total Payment Solutions got us approved and the setup was painless. Highly recommend.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">🚬</div>
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="author-name">Sarah K.</div>
+            <div class="author-biz">Smoke Shop — Durham, NC</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p class="testimonial-text">We run a carnival and needed mobile processing that works offline. Our rep got us Clover Flex units and we've been taking cards at every show ever since.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">🎡</div>
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="author-name">David R.</div>
+            <div class="author-biz">Carnival Operator — NC/SC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     LEAD FORM (bottom CTA)
+════════════════════════════════════════════ -->
+<section class="lead-section" id="free-quote">
+  <div class="lead-inner">
+    <div class="section-label">Free · No Obligation</div>
+    <h2>See How Much Your Business Could Save</h2>
+    <p>Fill out the form and a member of our sales team will contact you within 1 business day with a free, personalized rate analysis.</p>
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&amp;orgId=00D5e000002TuAN" method="POST" onsubmit="return validateRecaptcha(this)">
+      <input type="hidden" name="captcha_settings" value='{"keyname":"Totalpaynew","fallback":"true","orgId":"00D5e000002TuAN","ts":""}'>
+      <input type="hidden" name="oid" value="00D5e000002TuAN">
+      <input type="hidden" name="retURL" value="https://totalpaysolutions.com/thank-you.html">
+      <input type="hidden" name="00N5e00000bDdyz" value="Total Pay Solutions">
+      <div class="lead-form-grid">
+        <input type="text" name="first_name" placeholder="First Name" required>
+        <input type="text" name="last_name" placeholder="Last Name" required>
+        <input type="text" name="company" placeholder="Business Name" class="full" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <select name="00N5e00000eSBBz" class="full" aria-label="Business Type" required>
+          <option value="" disabled selected>Business Type</option>
+          <option value="Convenience Store">Convenience Store</option>
+          <option value="Tobacco / Smoke Shop">Tobacco / Smoke Shop</option>
+          <option value="Carnival / Fair / Event">Carnival / Fair / Event</option>
+          <option value="Concessionaire">Concessionaire</option>
+          <option value="Restaurant">Restaurant</option>
+          <option value="Retail">Retail</option>
+          <option value="Other">Other</option>
+        </select>
+        <select name="description" aria-label="Monthly Volume" required>
+          <option value="" disabled selected>Monthly Volume</option>
+          <option value="Under $5,000">Under $5,000</option>
+          <option value="$5,000 – $15,000">$5,000 – $15,000</option>
+          <option value="$15,000 – $50,000">$15,000 – $50,000</option>
+          <option value="$50,000+">$50,000+</option>
+        </select>
+        <select name="lead_source" aria-label="How did you hear about us" required>
+          <option value="" disabled selected>How did you hear about us?</option>
+          <option value="Website">Google / Online Search</option>
+          <option value="Referral">Referral / Word of Mouth</option>
+          <option value="Advertisement">Social Media / Ad</option>
+          <option value="Trade Show">Event / Trade Show</option>
+          <option value="1-800 Call In">Phone / Called In</option>
+          <option value="Cold Call">Other</option>
+        </select>
+        <div id="recaptcha-lead" style="margin:12px 0;"></div>
+        <button type="submit" class="lead-submit full">Send My Free Quote Request →</button>
+      </div>
+      <p class="lead-fine">By submitting this form you agree to be contacted by a Total Payment Solutions representative. No spam, no automated calls.</p>
+    </form>
+  </div>
+</section>
+
+
+</main>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+        <footer>
+<div class="footer-grid">
+<div class="footer-brand">
+<picture><source media="(max-width: 768px)" srcset="/Media/tps-logo-nav-sm.webp" type="image/webp"><source srcset="/Media/tps-logo-nav.webp" type="image/webp"><img alt="Total Payment Solutions" src="/Media/tps-logo-nav.png" style="height:52px;width:auto;margin-bottom:12px;" width="864" height="432"/></picture>
+<p class="footer-tagline">An elite credit card processing company designed to fit your needs. Serving NC, SC &amp; VA since 2014.</p>
+<div class="footer-contact">
+<p>📞 <strong><a href="tel:18445905044">1-844-590-5044</a></strong> · Toll-Free</p>
+<p>🌐 <a href="https://totalpaysolutions.com">totalpaysolutions.com</a></p>
+</div>
+<div class="footer-businesses-inline">
+<span class="footer-biz-label-inline">Our Businesses</span>
+<div class="footer-biz-logos-inline">
+<a href="https://carolinaatm.com/" target="_blank" rel="noopener"><img src="https://gorillaatmsecurity.com/assets/img/CATM-logo.webp" alt="Carolina ATM" loading="lazy"></a>
+<a href="https://www.expressbtm.com/" target="_blank" rel="noopener"><img src="https://gorillaatmsecurity.com/assets/img/express-btm-logo.webp" alt="Express BTM" loading="lazy"></a>
+<a href="https://gorillaatmsecurity.com/" target="_blank" rel="noopener"><img src="https://gorillaatmsecurity.com/assets/img/GORILLA-ATM-LOGO.webp" alt="Gorilla ATM Security" loading="lazy"></a>
+</div>
+</div>
+</div>
+
+<div class="footer-col">
+<h3>Services</h3>
+<ul>
+<li><a href="/cash-discount-program">Cash Discount Program</a></li>
+<li><a href="/credit-card-processing">Credit Card Processing</a></li>
+<li><a href="/ecommerce-payments">E-Commerce Payments</a></li>
+<li><a href="/clover-pos-systems">Clover POS Systems</a></li>
+<li><a href="/nrs">NRS POS Systems</a></li>
+<li><a href="/mobile-payment-processing">Mobile Processing</a></li>
+<li><a href="/atm-services">ATM Services</a></li>
+<li><a href="/high-risk-merchant-accounts">High-Risk Processing</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Industries</h3>
+<ul>
+<li><a href="/industries/convenience-stores">Convenience Stores</a></li>
+<li><a href="/industries/gas-stations">Gas Stations</a></li>
+<li><a href="/industries/restaurants">Restaurants &amp; Bars</a></li>
+<li><a href="/industries/retail">Retail</a></li>
+<li><a href="/industries/healthcare">Healthcare</a></li>
+<li><a href="/industries/contractors">Contractors</a></li>
+<li><a href="/industries/salons-spas">Salons &amp; Spas</a></li>
+<li><a href="/industries/tobacco-shops">Tobacco Shops</a></li>
+<li><a href="/industries/carnivals-fairs-events">Carnivals &amp; Events</a></li>
+<li><a href="/industries/concessionaires">Concessionaires</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Company</h3>
+<ul>
+<li><a href="/about">About Us</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/faq">FAQ</a></li>
+<li><a href="/get-a-quote">Get a Quote</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/locations/north-carolina-merchant-services">NC Merchant Services</a></li>
+<li><a href="/locations/south-carolina-merchant-services">SC Merchant Services</a></li>
+<li><a href="/locations/virginia-merchant-services">VA Merchant Services</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p class="footer-legal">Total Payment Solutions is a registered ISO of Wells Fargo Bank, N.A., Walnut Creek, CA. All payment processing services are subject to approval. Cash discount programs are legal in all 50 states. Visa, Mastercard, and American Express are registered trademarks of their respective owners.</p>
+<p class="footer-copy">© 2026 Total Payment Solutions. All rights reserved.</p>
+</div>
+</footer>
+
+
+<script>
+// Keep captcha_settings timestamp fresh for Salesforce Web-to-Lead
+function timestamp() {
+  var elems = document.getElementsByName("captcha_settings");
+  for (var i = 0; i < elems.length; i++) {
+    var data = JSON.parse(elems[i].value);
+    data["ts"] = JSON.stringify(new Date().getTime());
+    elems[i].value = JSON.stringify(data);
+  }
+}
+setInterval(timestamp, 500);
+
+var rcWidgets = {};
+
+window.renderRecaptcha = function() {
+  rcWidgets.hero = grecaptcha.render('recaptcha-hero', {
+    sitekey: '6Lf4cZksAAAAABl-_y5PIdZCu2G-sVDPWw9_8pwt'
+  });
+  rcWidgets.lead = grecaptcha.render('recaptcha-lead', {
+    sitekey: '6Lf4cZksAAAAABl-_y5PIdZCu2G-sVDPWw9_8pwt'
+  });
+};
+
+function validateRecaptcha(form) {
+  var isHero = !!form.querySelector('#recaptcha-hero');
+  var wid = isHero ? rcWidgets.hero : rcWidgets.lead;
+  if (!grecaptcha.getResponse(wid)) {
+    alert('Please check the "I\'m not a robot" box before submitting.');
+    return false;
+  }
+  return true;
+}
+</script>
+<script>
+(function(){
+  var dds = document.querySelectorAll('.nav-dropdown');
+  dds.forEach(function(dd){
+    dd.querySelector('.nav-drop-btn').addEventListener('click', function(e){
+      e.stopPropagation();
+      var wasOpen = dd.classList.contains('open');
+      dds.forEach(function(o){ o.classList.remove('open'); });
+      if(!wasOpen) dd.classList.add('open');
+    });
+  });
+  document.addEventListener('click', function(){
+    dds.forEach(function(dd){ dd.classList.remove('open'); });
+  });
+  var hbtn = document.getElementById('hamburger-btn');
+  var nav = document.querySelector('header nav');
+  if (hbtn && nav) {
+    hbtn.addEventListener('click', function(e){
+      e.stopPropagation();
+      nav.classList.toggle('mobile-open');
+    });
+    document.addEventListener('click', function(){
+      nav.classList.remove('mobile-open');
+    });
+  }
+})();
+</script>
+</body>
+</html>
