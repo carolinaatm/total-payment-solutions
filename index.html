@@ -1128,6 +1128,7 @@ window.renderRecaptcha = function() {
 };
 
 function validateRecaptcha(form) {
+  timestamp();
   var isHero = !!form.querySelector('#recaptcha-hero');
   var wid = isHero ? rcWidgets.hero : rcWidgets.lead;
   if (!grecaptcha.getResponse(wid)) {
