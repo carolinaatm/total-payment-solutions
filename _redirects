@@ -6,6 +6,8 @@
 /author/*        /blog  301
 /feed            /blog  301
 /feed/*          /blog  301
+/wp-login.php         /     301
+/wp-content/*         /     301
 
 # ── BROKEN URL FIX ──────────────────────────────────────────
 # Double-slash URL indexed by Google from old site
