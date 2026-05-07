@@ -305,8 +305,8 @@
   <url>
     <loc>https://totalpaysolutions.com/blog</loc>
     <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
   </url>
   <url>
     <loc>https://totalpaysolutions.com/blog/what-is-a-cash-discount-program</loc>
@@ -321,3 +321,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+        <loc>https://totalpaysolutions.com/blog/clover-vs-nrs-pos-comparison</loc>
+        <lastmod>2026-04-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+  </url>
+
+</urlset>
