@@ -92,11 +92,13 @@ function _loadAnalytics() {
     y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
   })(window, document, "clarity", "script", "w1vro80gp8");
 }
-if ('requestIdleCallback' in window) {
-  requestIdleCallback(_loadAnalytics, {timeout: 4000});
-} else {
-  window.addEventListener('load', function(){ setTimeout(_loadAnalytics, 3500); });
-}
+window.addEventListener('load', function() {
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(_loadAnalytics, {timeout: 3000});
+  } else {
+    setTimeout(_loadAnalytics, 1000);
+  }
+}, {once: true});
 </script>
 <!-- Analytics deferred until idle for LCP performance -->
 <script>
@@ -112,11 +114,13 @@ function _loadAnalytics() {
     y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
   })(window, document, "clarity", "script", "w1vro80gp8");
 }
-if ('requestIdleCallback' in window) {
-  requestIdleCallback(_loadAnalytics, {timeout: 4000});
-} else {
-  window.addEventListener('load', function(){ setTimeout(_loadAnalytics, 3500); });
-}
+window.addEventListener('load', function() {
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(_loadAnalytics, {timeout: 3000});
+  } else {
+    setTimeout(_loadAnalytics, 1000);
+  }
+}, {once: true});
 </script>
 </head>
 <body>
