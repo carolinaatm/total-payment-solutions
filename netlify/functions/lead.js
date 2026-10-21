@@ -10,7 +10,7 @@ const BRANDS = {
   gorilla: { env: 'GORILLA', host: 'gorillaatmsecurity.com', thanks: 'https://gorillaatmsecurity.com/thank-you/' },
   tps:     { env: 'TPS',     host: 'totalpaysolutions.com',  thanks: 'https://totalpaysolutions.com/thank-you.html' },
   catm:    { env: 'CATM',    host: 'carolinaatm.com',        thanks: 'https://carolinaatm.com/thank-you/' },
-  ebtm:    { env: 'EBTM',    host: 'expressbtm.com',         thanks: 'https://www.expressbtm.com/' }
+  ebtm:    { env: 'EBTM',    host: 'expressbtm.com',         thanks: 'https://www.expressbtm.com/thanks?return=become', legacySF: true }
 };
 const PASS = ['First Name', 'Last Name', 'Company', 'Email', 'Phone', 'Lead Source', 'LEADCF1', 'LEADCF2', 'LEADCF3', 'Description'];
 const LINK_RE = /(https?:\/\/|www\.|<\s*a[\s>]|href\s*=|\[url|<\s*script)/i;
@@ -25,9 +25,21 @@ exports.handler = async (event) => {
   if (event.httpMethod !== 'POST') return { statusCode: 405, body: 'Method Not Allowed' };
   const raw = event.isBase64Encoded ? Buffer.from(event.body || '', 'base64').toString('utf8') : (event.body || '');
   const p = new URLSearchParams(raw);
-  const key = (p.get('zbrand') || '').toLowerCase().trim();
+  const qs = event.queryStringParameters || {};
+  const key = (p.get('zbrand') || qs.b || '').toLowerCase().trim();
   const b = BRANDS[key];
   if (!b) return { statusCode: 400, body: 'Bad request' };
+  // Legacy Salesforce Web-to-Lead markup (Express BTM Nuxt build): map SF names to Zoho names.
+  if (b.legacySF) {
+    const SF = { first_name: 'First Name', last_name: 'Last Name', company: 'Company', email: 'Email', phone: 'Phone' };
+    for (const k in SF) if (p.has(k) && !p.has(SF[k])) p.set(SF[k], p.get(k));
+    const desc = ['Form: Become a Host (/become)'];
+    if (p.get('city') || p.get('state')) desc.push('Location: ' + [p.get('city'), p.get('state')].filter(Boolean).join(', '));
+    if ((p.get('00N5e00000eSBBz') || '').trim()) desc.push('Message: ' + p.get('00N5e00000eSBBz').trim());
+    if (!p.has('Description')) p.set('Description', desc.join('\n'));
+    p.set('Lead Source', 'Website'); p.set('LEADCF1', 'Express BTM'); p.set('LEADCF3', 'Prospect'); p.set('LEADCF2', 'Bitcoin');
+    if (!(p.get('Company') || '').trim()) p.set('Company', ((p.get('First Name') || '') + ' ' + (p.get('Last Name') || '')).trim() || 'Not provided');
+  }
   const env = process.env;
   const ip = (event.headers['x-nf-client-connection-ip'] || event.headers['x-forwarded-for'] || '').split(',')[0].trim();
   const reasons = [];
@@ -35,7 +47,7 @@ exports.handler = async (event) => {
   // 1. cheap checks
   if ((p.get('aG9uZXlwb3Q') || '').trim()) reasons.push('honeypot');
   const ts = parseInt(p.get('zts') || '0', 10);
-  if (!ts) reasons.push('no-timestamp');
+  if (!ts) { if (!b.legacySF) reasons.push('no-timestamp'); }
   else if (Date.now() - ts < MIN_FILL_MS) reasons.push('too-fast');
   const fn = (p.get('First Name') || '').trim(), ln = (p.get('Last Name') || '').trim();
   if (!ln) reasons.push('no-last-name');
