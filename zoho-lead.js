@@ -2,6 +2,8 @@
    (business type, volume, how-heard, message, source page) before submit.
    Forms opt in with data-zoho-lead. Fields to include carry data-zlabel. */
 (function () {
+  function stamp() { document.querySelectorAll('input[name="zts"]').forEach(function (i) { if (!i.value) i.value = Date.now(); }); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', stamp); else stamp();
   function val(el) {
     if (el.tagName === 'SELECT' && el.multiple) {
       return Array.prototype.map.call(el.selectedOptions, function (o) { return o.value; }).join(', ');
